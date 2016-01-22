@@ -51,7 +51,7 @@ df$adjweight <- ifelse(test = df$weight<966,
 # f through i
 ShuyaKongAssignment2$s2f <- mean(df$adjweight)
 ShuyaKongAssignment2$s2g <- median(df$adjweight)
-ShuyaKongAssignment2$s2h <- summary(df$weight,df$SEX==1) ## but i got length 6 instead of 7
+ShuyaKongAssignment2$s2h <- summary(df$weight,df$SEX==1)
 ShuyaKongAssignment2$s2i <- summary(df$weight,df$SEX==2)
 
 #3.
