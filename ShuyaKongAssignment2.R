@@ -77,9 +77,6 @@ ShuyaKongAssignment2$s3e <- paste(arr[1,1,3],arr[2,3,1],arr[3,1,3], sep = "")
 # 4.
 library(foreign)
 org_example <- read.dta("D:/RStudio/Rdata/org_example.dta")
-sort(unique(org_example$year))
-sort(unique(org_example$month))
-sort(unique(org_example$educ))
 
 ShuyaKongAssignment2$s4 <- aggregate(org_example$rw,by = list(org_example$year,org_example$month,org_example$educ),FUN = mean,simplify = TRUE, na.action=na.omit)
 
